@@ -12,7 +12,7 @@ def split_fasta(input_file, output_dir):
         output_file = os.path.join(output_dir, f"{record.id}.fasta")
         with open(output_file, "w") as f:
             SeqIO.write(record, f, "fasta")
-    print(f"Separated fasta files are written to {output_file}")
+    print(f"Separated fasta files are written to {output_dir} directory")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
