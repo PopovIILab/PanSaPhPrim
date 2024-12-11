@@ -1,9 +1,13 @@
 ##################################################################
-# CHAPTER 2. Design Primers That Yield Group-Specific Signatures #
+# CHAPTER 4. Design Primers That Yield Group-Specific Signatures #
 ##################################################################
+
+# Set the dir
 
 main_dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(main_dir)
+
+# Load/install required packages
 
 #if (!requireNamespace("BiocManager", quietly=TRUE))
   #install.packages("BiocManager")
@@ -17,13 +21,13 @@ setwd(main_dir)
 system("hybrid-min-V")
 
 library(DECIPHER)
+library(DBI)
+library(DECIPHER)
 library("RSQLServer")
 library("RSQLite")
-library(DBI)
 library("writexl")
-library(DECIPHER)
 
-fas <- "Alignment/Align-SaPh/SaPh-current.415.gen"
+fas <- "Alignment/Align-SaPh/SaPh-current.414.gen"
 
 dbConn <- dbConnect(SQLite(), ":memory:")
 
