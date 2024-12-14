@@ -1,4 +1,4 @@
-# Pan Salmonella phages degenerate PCR primers design
+# Pan _Salmonella_ phages degenerate PCR primers design
 
 > This is the repository for supplementary materials for the upcoming publication
 
